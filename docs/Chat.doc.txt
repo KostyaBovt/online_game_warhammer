@@ -1,0 +1,5 @@
+Class chat exists to send messages and take them out from the database
+function send()
+    send data to db table messages
+function get()
+    get data from db table messages

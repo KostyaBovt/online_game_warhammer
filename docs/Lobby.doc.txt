@@ -1,0 +1,10 @@
+class Lobby has propery db that gets instance of DB class on sonstruct;
+
+Lobby class purpose is to support getting information from database to use in Lobby in main page
+
+method getActiveGameId($user_id):
+ get id of active game using user id (if it is in table "games" in database);
+ if user is actally in game it return the id of this active game;
+
+method getOpenGames():
+ return in array currne games that is opened to join (have only user_1 and si not finished)

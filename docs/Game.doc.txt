@@ -1,0 +1,57 @@
+class Game id to manupulate game data (put in database after players action and retrive from database and put into map)
+
+properties:
+
+	$_id;  - id of te game
+	$_user_1; - id of player 1 
+	$_user_2; - id of player 2
+	$_winner; - id of winner (0 per defalut)
+	$_finished; - 1 if finished (o per default)
+	$_game_status;  - array of game info
+	$_db; - instance of DB class
+
+methods:
+
+__construct():
+	create DB class instance
+
+create() :
+	create new game (insert new game info in table games with init values)
+
+getData($id) :
+	receive from database table games info about game to object instance
+
+uploadData($id) :
+	upload to database table games info about game from object instance
+
+addPlayer1($id) :
+	addd first user to game (DB) (and add game id to the session)
+
+addPlayer2($id) :
+	addd second user to game (DB) (and add game id to the session)
+
+getShipCords($user) :
+	rturn ships cords in array;
+
+validateAction($action) :
+	validate if action can be done now (using current user from session and data about game - whose turn and phase is now). lock action wehere winner is determined
+
+rotateLeft($argument) :
+	exec rotate left the ship of currennt turn user
+
+
+rotateRight($argument) :
+	exec rotate right the ship of currennt turn user
+
+move($speed)
+	exec move for current turn user
+
+shoot() :
+	exec shoot for current turn user
+
+checkWinner() :
+	check if health is above 0 and if user is dead change data in object in database
+
+finishGame():
+	make somebody winner if other player exit game.
+	if winner is determined only exit game and change data in obj and database

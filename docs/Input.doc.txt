@@ -1,0 +1,6 @@
+Class Input exists to work with the input
+	function exists()
+		function for checking the $_POST
+	function get()
+		Function that returns a $_POST or $_GET
+		

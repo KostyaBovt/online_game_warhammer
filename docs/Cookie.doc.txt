@@ -1,0 +1,6 @@
+Class cookie works with cookies
+    function exists()
+        сhecks if there are cookies for this user or not
+    function get()
+        returns cookies for this user
+    function put()

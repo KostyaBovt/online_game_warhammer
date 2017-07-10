@@ -1,0 +1,5 @@
+Class Hash сreated to work with a hash
+	function make()	
+		function for hashing
+	function unique()
+		function for checking for uniqueness

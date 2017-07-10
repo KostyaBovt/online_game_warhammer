@@ -1,0 +1,76 @@
+body{
+	font-size: 18px;
+	width: 1200px;
+	margin: auto;
+
+}
+.wrap-left{
+	float: left;
+	width: 600px;
+}
+.chat {
+	float: right;
+	width: 600px;
+	background-color: #1aacd1;
+	border-radius: 5px;
+	height: 750px;
+}
+.logo{
+	float: left;
+}
+.chat-wind{
+	height: 600px;
+	width: 550px;
+	margin: 25px;
+	background-color: whitesmoke;
+}
+.chat h3{
+	color: white;
+	text-align: center;
+}
+.auth-user{
+	float: right;
+}
+#chat-input{
+	width: 500px;
+	height: 25px;
+	float: right;
+}
+#chat-time{
+	font-size: 12px;
+	float: right;
+}
+#chat_button{
+	width: 50px;
+	height: 20px;
+	float: right;
+	margin-right:25px;
+}
+.users-raiting
+{
+	background-color: #1aacd1;
+	width: 500px;
+	height:200px;
+	border-radius: 5px;
+}
+.users-raiting h3{
+	color: white;
+	text-align: center;
+}
+.hello{
+	width: 50%;
+	margin: auto;
+	margin-top: 10%;
+}
+.raiting{
+	width: 250px;
+	margin: auto;
+	background-color: whitesmoke;
+}
+.raiting-line{
+	border: 1px solid black;
+}
+#raiting-login{
+	background-color: whitesmoke;
+
+}

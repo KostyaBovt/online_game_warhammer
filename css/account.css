@@ -1,0 +1,14 @@
+body{
+    width: 60%;
+    margin:auto;
+}
+.header h2 {
+    float: left;
+}
+.header h3{
+    float: right;
+}
+a{
+    color: #1aacd1;
+    text-decoration: none;
+}

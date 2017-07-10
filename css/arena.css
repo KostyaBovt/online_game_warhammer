@@ -1,0 +1,30 @@
+.arena , .player-1, .player-2 {
+	border: 1px solid black;
+}
+
+.player-1, .player-2 {
+	width: 200px;
+	float: left;
+}
+
+.map {
+	float: left;
+}
+
+.map td {
+	width: 5px;
+	height: 5px;
+	border: 1px solid black;
+}
+
+.map table {
+	border: 1px solid black;
+}
+
+.red {
+ 	background-color: red;
+ }
+
+.blue {
+ 	background-color: blue;
+ }

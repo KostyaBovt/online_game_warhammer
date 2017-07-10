@@ -1,0 +1,3 @@
+Class Redirect сreated to work with redirection
+	function to()
+		function that redirects the user to the specified address

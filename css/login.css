@@ -1,0 +1,33 @@
+body{
+    background-color: #1c647b;
+}
+.main {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color: whitesmoke;
+    margin-top: 20%;
+    text-align: center;
+}
+
+h3{
+  padding: 10px;
+}
+
+form{
+    margin-top: 20%;
+}
+
+.reg{
+    margin-top: 10%;
+}
+
+input{
+    width: 150px;
+    height: 20px;
+}
+#log{
+    float: right;
+    width:80px;
+    margin-right: 11%;
+}

@@ -1,0 +1,9 @@
+Class Session 
+	function exists()
+		function checks if the given session exists or not
+	function put()
+		function that assigns the passed value to a passed session
+	function delete()
+		function deletes a specific session
+		
+

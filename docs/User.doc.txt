@@ -1,0 +1,34 @@
+user class is used to manage user info.
+
+on construct new instance receive info from db of actual logged user or on mentioned user while construct in argumet
+
+properies:
+	bd : keep DB class instance
+	data : keep user data from db
+	isLoggedIn : boolean if user ins loggedIn
+
+methods:
+
+update($fields = array(), $id = null):
+	updata user info in users table per id
+
+create($fields) :
+	create user in users table
+
+find($user = null):
+	get user info from db and write in object data property
+
+login($username = null, $password = null):
+	login user to session
+
+exists():
+	check if user exist per id
+
+logout(): 
+	logout user current form session
+
+data() :
+	return data
+
+isLoggedIn()
+	return prooery isLoggedIn

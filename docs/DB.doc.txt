@@ -1,0 +1,46 @@
+class DB is for working with database;
+
+it is lonly class so you always must use getInstance method to obtain one only DB instance;
+
+DB instance has:
+ - pdo (created during construct using config data)
+ - query (last prepared and exucuted query)
+ - error (boolean - if were errors durig last query )
+ - result (keeps fetched reseult from last query in onbject)
+ - count (keeps rows obtained form last query in result)
+
+methods:
+
+query($sql, $params = array()):
+	exucute query with sql statemets and params in array taht will be binded
+
+action($action, $table, $where = array()):
+	perform query where you can specify action and where array
+	from 3 elements: field , operator, value
+
+get($table, $where) :
+	perform SELECT * in method action()
+
+delete($table, $where) 
+	perform DELETE in method action()
+
+insert($table, $fields = array()):
+	perform INSERT INTO table fields mentioned in array $fields
+
+update($table, $id, $fields =  array())
+	update fields in table where $id is defined
+
+results():
+	return result property;
+
+first():
+	return first element of array reslut()
+
+error():
+	return arror property;
+
+count()
+	return count property;
+
+getLastId():
+	return id of last inserted data in database;
